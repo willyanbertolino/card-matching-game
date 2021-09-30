@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h2 class="game-title">memory game</h2>
+      <div class="players"></div>
+      <button type="button" class="new-game-btn">new game</button>
+    </header>
+
+    <!-- modal new game -->
+    <section class="modal-new-game-container show-new-game-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>new game</h3>
+          <button type="button" class="close-modal" id="close-modal-new-game">
+            x
+          </button>
+        </div>
+        <form class="new-game-center">
+          <div class="players-number">
+            <h4>players</h4>
+            <input type="number" id="players" min="1" max="4" value="1" />
+          </div>
+          <div class="cards-number">
+            <h4>cards</h4>
+            <input type="number" id="cards" value="12" min="12" max="20" />
+          </div>
+          <button type="submit" class="new-game-start-btn">start</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="cards"></section>
+
+    <!-- modal end game -->
+    <section class="modal-end-game-container">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>congrats!</h3>
+          <button type="button" class="close-modal" id="close-modal-end-game">
+            x
+          </button>
+        </div>
+        <div class="ranking"></div>
+
+        <button
+          type="submit"
+          class="new-game-start-btn end-game-btn"
+          id="new-game-start-btn-again"
+        >
+          new game
+        </button>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
