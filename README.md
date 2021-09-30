@@ -2,12 +2,17 @@
 
 The site lives in: https://cards-matching-game-willyan-bertolino.netlify.app/
 
-### This is a classic memory game of matching cards. It allows 1 to 4 players and 12 to 20 different cards which generates 24 to 40 cards 2 by 2.
-- Rules:
-#### The first player starts by showing 2 cards. If they are matched, he/she scores and play again. Else, the cards are covered again and the next player plays.
+### Description
+This is a classic memory game of matching cards. It allows 1 to 4 players and 12 to 20 different cards which generates 24 to 40 cards 2 by 2.
 
-* Score:
-#### The score number depends on the number of times each card has been turned.
+![image](https://user-images.githubusercontent.com/57110420/135470279-260e9732-c73b-45c8-b60f-b8e9f462f83b.png)
+
+
+### Rules: 
+The first player starts by showing 2 cards. If they are matched, he/she scores and play again. Else, the cards are covered again and the next player plays.
+
+### Score:
+The score number depends on the number of times each card has been turned.
 - 1 time -> 10 points
 - 2 times -> 40 points
 - 3 times -> 30 points
