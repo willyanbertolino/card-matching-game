@@ -30,11 +30,11 @@ body {
 header {
   width: 100vw;
   background: var(--clr-secondary-3);
-  height: 4rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .game-title {
@@ -44,17 +44,27 @@ header {
   color: var(--clr-primary-1);
 }
 
+.info-players {
+  font-size: 0.9rem;
+}
+
 .players {
-  display: grid;
-  max-width: 40%;
+  padding: 0.5rem 0;
+  background: var(--clr-secondary-3);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 10vw;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   gap: 0.3rem;
-  place-items: center;
+}
+
+/* .players {
   background: var(--clr-secondary-4);
   padding: 0.5rem 1rem;
   border: 1px dashed var(--clr-primary-2);
   border-radius: 0.2rem;
-}
+} */
 
 .player {
   margin: 0 auto;
@@ -104,21 +114,26 @@ header {
 }
 
 @media screen and (min-width: 660px) {
-  header {
-    padding: 0 3rem;
-  }
   .game-title {
     font-size: 1.6rem;
   }
+
   .players {
+    padding: 1rem 20vw;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     gap: 0.5rem;
   }
+
   .player h4 {
     font-size: 0.8rem;
   }
 }
 
+@media screen and (min-width: 990px) {
+  .players {
+    padding: 1rem 30vw;
+  }
+}
 /* modal new game */
 .modal-new-game-container,
 .modal-end-game-container {

@@ -10,9 +10,12 @@
     <!-- header -->
     <header>
       <h2 class="game-title">memory game</h2>
-      <div class="players"></div>
       <button type="button" class="new-game-btn">new game</button>
     </header>
+
+    <section class="players">
+      <!-- <div class="players"></div> -->
+    </section>
 
     <!-- modal new game -->
     <section class="modal-new-game-container show-new-game-modal">
@@ -25,11 +28,11 @@
         </div>
         <form class="new-game-center">
           <div class="players-number">
-            <h4>players</h4>
+            <h4>players: <span class="info-players">1-4</span></h4>
             <input type="number" id="players" min="1" max="4" value="1" />
           </div>
           <div class="cards-number">
-            <h4>cards</h4>
+            <h4>cards: <span class="info-players">12-20</span></h4>
             <input type="number" id="cards" value="12" min="12" max="20" />
           </div>
           <button type="submit" class="new-game-start-btn">start</button>
